@@ -29,26 +29,26 @@
 name: Docker Border Router
 
 on:
-  push:
-    branches-ignore:
-      - 'dependabot/**'
-    tags:
-      - 'v*'
-  pull_request:
-    branches:
-      - 'main'
-  workflow_call:
-    inputs:
-      release_tag:
-        description: 'Release tag to assign to the image'
-        required: false
-        type: string
-        default: ''
-    secrets:
-      DOCKER_USERNAME:
-        required: false
-      DOCKER_PASSWORD:
-        required: false
+  # push:
+  #   branches-ignore:
+  #     - 'dependabot/**'
+  #   tags:
+  #     - 'v*'
+  # pull_request:
+  #   branches:
+  #     - 'main'
+  # workflow_call:
+  #   inputs:
+  #     release_tag:
+  #       description: 'Release tag to assign to the image'
+  #       required: false
+  #       type: string
+  #       default: ''
+  #   secrets:
+  #     DOCKER_USERNAME:
+  #       required: false
+  #     DOCKER_PASSWORD:
+  #       required: false
 
 
 concurrency:
